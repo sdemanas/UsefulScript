@@ -9,7 +9,7 @@ $InputString = Read-Host 'Input the string to search'
 Get-ChildItem -Path . -Recurse -File | 
 
 # Use regex to strictly search for InputString 
-# Select-String -Pattern "\b$name\b" 
+# Select-String -Pattern "\b$InputString\b" 
 Select-String -Pattern $InputString |
 
 # keep only unique file paths in the result.
